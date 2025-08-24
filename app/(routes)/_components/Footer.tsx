@@ -1,5 +1,6 @@
 import { footerSections } from '@/constans'
 import React from 'react'
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div>
         <div className='flex flex-col md:flex-row justify-between gap-8 py-12'>
           <div className='w-full md:w-1/4'>
-            Logo
+            <Image alt='' src='/logo.png' width={512} height={150} className="w-auto h-12 lg:h-14" />
             <p className='mt-2 text-sm'>
               Your trusted source for the latest products and trends.
             </p>
