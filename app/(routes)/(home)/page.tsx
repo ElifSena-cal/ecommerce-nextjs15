@@ -1,8 +1,13 @@
-import { Button } from "@/components/ui/button";
+import { getSlider } from "@/actions/getSlider";
+import { SliderItem } from "@/constans";
+import Hero from "../_components/Hero";
 
-export default function Home() {
+
+export default async function Home() {
+  const slider: SliderItem[] = await getSlider();
   return (
     <>
+      <Hero slider={slider} />
     </>
   );
 }

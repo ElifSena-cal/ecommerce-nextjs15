@@ -1,3 +1,5 @@
+export const API_URL = process.env.NEXT_PUBLIC_DIRECTUS_URL;
+
 export type FooterSection = {
   title: string
   links: string[]
@@ -35,3 +37,9 @@ export const navLinks: NavLink[] = [
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
 ];
+
+export type SliderItem = {
+  id: string;
+  title: string;
+  image: string;
+};
